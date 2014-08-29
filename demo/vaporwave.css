@@ -22,7 +22,7 @@ h6.section {
   display: block;
 }
 .section::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 4px;
   display: block;
@@ -33,8 +33,8 @@ h6.section {
   background: #fe81df;
 }
 .section::before {
-  content: " ";
-  background-image: url("/img/ic-section-small.png");
+  content: ' ';
+  background-image: url("img/ic-section-small.png");
   background-repeat: none;
   position: relative;
   display: block;
@@ -42,6 +42,9 @@ h6.section {
   top: -8px;
   height: 30px;
   width: 30px;
+}
+.palm-trees {
+  position: relative;
 }
 .palm-trees:before {
   content: '';
