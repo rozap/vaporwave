@@ -23,12 +23,12 @@ gulp.task('default', function(){
     }))
 
     // non-minified
-    .pipe(rename('win98.css'))
+    .pipe(rename('vaporwave.css'))
     .pipe(gulp.dest('dist'))
     .pipe(gulp.dest('demo'))
 
     // minified
-    .pipe(rename('win98.min.css'))
+    .pipe(rename('vaporwave.min.css'))
     .pipe(csso())
     .pipe(gulp.dest('dist'));
 });

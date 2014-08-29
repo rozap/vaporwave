@@ -1,9 +1,9 @@
 {
   "version": "0.0.1",
-  "homepage": "http://github.com/contra/windows_98.css",
+  "homepage": "http://github.com/rozap/vaporwave",
   "repository": {
     "type": "git",
-    "url": "git://github.com/contra/windows_98.css"
+    "url": "git://github.com/rozap/vaporwave"
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.3.0",
@@ -17,7 +17,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/contra/windows_98.css/raw/master/LICENSE"
+      "url": "http://github.com/rozap/vaporwave/raw/master/LICENSE"
     }
   ]
 }
