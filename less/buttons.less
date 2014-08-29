@@ -1,0 +1,32 @@
+button:enabled {
+  color: @gray-darker;
+}
+
+
+button, ::-webkit-file-upload-button {
+  -webkit-font-smoothing: none;
+  text-align: center;
+  outline: none;
+  padding: 4px;
+  background: @gray;
+  border: 1px solid;
+  border-top-color: @gray-lighter;
+  border-left-color: @gray-lighter;
+  border-right-color: @gray-dark;
+  border-bottom-color: @gray-dark;
+  box-shadow: 1px 1px 0 0 @black;
+}
+
+button:disabled {
+  color: @gray-light;
+  text-shadow: 1px 1px @white;
+}
+
+button:active:enabled {
+  box-shadow: 0 0 0 0 @black inset;
+  border-top-color: @black;
+  border-left-color: @black;
+  border-right-color: @black;
+  border-bottom-color: @black;
+  /* TODO: restyle this to be accurate */
+}
