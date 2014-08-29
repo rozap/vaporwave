@@ -1,21 +1,31 @@
-height = 643px/2
-width = 384px/2
+height = 1748px/2
+width = 383px/2
 
 column()
+  box-sizing: border-box
   content: ''
   display: block
   background-repeat: no-repeat
   background-image: url('img/column.png')
-  background-size: width height
-  height: height
+  background-size: contain
+  height: 100%
   width: width
   transform-origin: 50% 50%
 
 .columns
   position: relative
+  min-height: 300px
 
 .columns:before
   column()
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translateY(-50%)
 
 .columns:after
   column()
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translateY(-50%) translateX(50%)

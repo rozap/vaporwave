@@ -84,34 +84,56 @@ h6.section {
 }
 .columns {
   position: relative;
+  min-height: 300px;
 }
 .columns:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   content: '';
   display: block;
   background-repeat: no-repeat;
   background-image: url("img/column.png");
-  background-size: 192px 321.5px;
-  height: 321.5px;
-  width: 192px;
+  background-size: contain;
+  height: 100%;
+  width: 191.5px;
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .columns:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   content: '';
   display: block;
   background-repeat: no-repeat;
   background-image: url("img/column.png");
-  background-size: 192px 321.5px;
-  height: 321.5px;
-  width: 192px;
+  background-size: contain;
+  height: 100%;
+  width: 191.5px;
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%) translateX(50%);
+  -ms-transform: translateY(-50%) translateX(50%);
+  transform: translateY(-50%) translateX(50%);
 }
 .water {
   background-size: 250px 250px;
   background-image: url("img/water.jpg");
+  background-repeat: repeat;
+}
+.white-marble {
+  background-size: 250px 250px;
+  background-image: url("img/white-marble.png");
   background-repeat: repeat;
 }
 .divider {
