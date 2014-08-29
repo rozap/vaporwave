@@ -1,11 +1,53 @@
-.win98 {
+.vaporwave {
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: none;
   font-size: 11px;
   font-family: Tahoma, Verdana;
   color: #070707;
 }
-.win98 .window {
+.vaporwave h1,
+.vaporwave h2 {
+  text-transform: uppercase;
+  font-0: weight;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: ;
+  text-shadow: -4px -4px 10px,  4px 4px 6px,  4px 4px 6px,  -4px -4px 6px;
+}
+.vaporwave h3.section,
+.vaporwave h4.section,
+.vaporwave h5.section {
+  border-bottom: 4px solid #6dff6c;
+  margin-top: 32px;
+  margin: 16px 8px;
+}
+.vaporwave h3.section::after,
+.vaporwave h4.section::after,
+.vaporwave h5.section::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: relative;
+  top: 7px;
+  z-index: -1;
+  left: 2px;
+  background: #fe81df;
+}
+.vaporwave h3.section::before,
+.vaporwave h4.section::before,
+.vaporwave h5.section::before {
+  content: " ";
+  background-image: url("/img/ic-section-small.png");
+  background-repeat: none;
+  position: relative;
+  display: block;
+  float: right;
+  top: -8px;
+  height: 30px;
+  width: 30px;
+  z-index: 10;
+}
+.vaporwave .window {
   width: 400px;
   background: #bfbfbf;
   border: 1px solid;
@@ -15,10 +57,10 @@
   border-bottom-color: #808080;
   box-shadow: 1px 1px 0 0 #000;
 }
-.win98 .window .content {
+.vaporwave .window .content {
   padding: 7px 10px;
 }
-.win98 .window .header {
+.vaporwave .window .header {
   margin: 2px 2px 0;
   padding: 1px 2px;
   color: #fff;
@@ -28,17 +70,17 @@
   font-size: 11px;
   line-height: 16px;
 }
-.win98 .window .header .icon {
+.vaporwave .window .header .icon {
   width: 16px;
   height: 16px;
   float: left;
   margin-right: 2px;
 }
-.win98 .window .header .buttons {
+.vaporwave .window .header .buttons {
   height: 14px;
   float: right;
 }
-.win98 .window .header .buttons button {
+.vaporwave .window .header .buttons button {
   vertical-align: text-top;
   font-weight: bold;
   line-height: 12px;
@@ -46,7 +88,7 @@
   height: 14px;
   width: 14px;
 }
-.win98 button {
+.vaporwave button {
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: none;
   font-size: 11px;
@@ -63,21 +105,21 @@
   border-bottom-color: #808080;
   box-shadow: 1px 1px 0 0 #000;
 }
-.win98 button:enabled {
+.vaporwave button:enabled {
   color: #070707;
 }
-.win98 button:disabled {
+.vaporwave button:disabled {
   color: #818181;
   text-shadow: 1px 1px #fff;
 }
-.win98 button:active:enabled {
+.vaporwave button:active:enabled {
   box-shadow: 0 0 0 0 #000 inset;
   border-top-color: #000;
   border-left-color: #000;
   border-right-color: #000;
   border-bottom-color: #000;
 }
-.win98 .resizable {
+.vaporwave .resizable {
   overflow: auto;
   resize: both;
 }
