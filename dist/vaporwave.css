@@ -117,6 +117,45 @@ h6.section {
 .divider {
   margin: 50px 0 5px 0;
 }
+.dolphins {
+  position: relative;
+}
+.dolphins:before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("img/dolphin.png");
+  background-size: 192px 321.5px;
+  height: 321.5px;
+  width: 192px;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(-20%) rotateY(180deg) rotateZ(-10deg);
+  -ms-transform: translateX(-20%) rotateY(180deg) rotateZ(-10deg);
+  transform: translateX(-20%) rotateY(180deg) rotateZ(-10deg);
+}
+.dolphins:after {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("img/dolphin.png");
+  background-size: 192px 321.5px;
+  height: 321.5px;
+  width: 192px;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(20%) rotateZ(-20deg);
+  -ms-transform: translateX(20%) rotateZ(-20deg);
+  transform: translateX(20%) rotateZ(-20deg);
+}
 .container {
   max-width: 768px;
   margin-left: calc(50% - 768px / 2);

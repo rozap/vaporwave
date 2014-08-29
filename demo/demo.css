@@ -6,6 +6,9 @@ body {
   margin: 0 auto;
 }
 
+.example {
+	min-height: 420px;
+}
 
 .container {
 	background: white;
