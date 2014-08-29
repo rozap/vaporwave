@@ -1,18 +1,5 @@
-vaporwave
-=========
+## windows_98.css
 
-qB)
+This is a work in progress. The goal is to get as close as possible to the look and feel of windows 98.
 
-
-### to use
-use less to compile ```style.less```
-
-### to hack
-*    install ```inotify-tools``` (``` sudo apt-get install inotify-tools ```) to run watch.sh 
-*    this will build it and watch *.less for changes
-*    add to to index.html for adding new styles on elements, or create something else in examples
-
-
-
-#### see also
-*    vaporwave dot c s s  is a total ripoff of contra's https://github.com/contra/windows_98.css
+![](https://i.cloudup.com/-Xjq91iIAH-2000x2000.png)
