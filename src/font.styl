@@ -1,14 +1,21 @@
+@font-face 
+  font-family: "PfDin"
+  src: url(/font/pf-din.ttf)
 
-h1, h2 
-  text-transform: uppercase
-  font-0: weight
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif
-  color:@white
-  text-shadow: 
-    @red-lighter -4px -4px 10px,
-    @blue-lighter 4px 4px 6px,
-    @blue-lighter 4px 4px 6px,
-    @red-lighter -4px -4px 6px
+
+
+h1.section, h2.section, h3.section, h4.section, h5.section, h6.section 
+  font-family: PfDin
+  font-weight: 0;
+
+
+//experiment..
+//  color:@white
+//  text-shadow: 
+//    @red-lighter -4px -4px 10px,
+//    @blue-lighter 4px 4px 6px,
+//    @blue-lighter 4px 4px 6px,
+//    @red-lighter -4px -4px 6px
 
 
 
@@ -16,9 +23,13 @@ h1, h2
   border-bottom: 4px solid green
   margin-top: 32px
   margin: 16px 8px
+  text-shadow: gray-light 2px 2px 2px
   z-index:2
+  color:gray-darker
+  letter-spacing: 6px
   display:block
 
+//wtf is the pink showing in front of the green
 .section::after 
   content: ""
   width: 100%

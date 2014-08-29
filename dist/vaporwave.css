@@ -1,16 +1,24 @@
-h1,
-h2 {
-  text-transform: uppercase;
-  font-0: weight;
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: ;
-  text-shadow: -4px -4px 10px,  4px 4px 6px,  4px 4px 6px,  -4px -4px 6px;
+@font-face {
+  font-family: "PfDin";
+  src: url("/font/pf-din.ttf");
+}
+h1.section,
+h2.section,
+h3.section,
+h4.section,
+h5.section,
+h6.section {
+  font-family: PfDin;
+  font-weight: 0;
 }
 .section {
   border-bottom: 4px solid #6dff6c;
   margin-top: 32px;
   margin: 16px 8px;
+  text-shadow: #818181 2px 2px 2px;
   z-index: 2;
+  color: #070707;
+  letter-spacing: 6px;
   display: block;
 }
 .section::after {
