@@ -35,6 +35,9 @@ h2 {
   height: 30px;
   width: 30px;
 }
+.palm-trees {
+  position: relative;
+}
 .palm-trees:before {
   content: '';
   display: block;
