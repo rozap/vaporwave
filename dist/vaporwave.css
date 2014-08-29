@@ -1,3 +1,42 @@
 .palm-trees:before {
+  -webkit-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("img/palm-tree.png");
+  background-size: 192px 321.5px;
+  height: 321.5px;
+  width: 192px;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  -webkit-transform: translateX(-50%) rotateY(180deg) rotateZ(-20deg);
+  -ms-transform: translateX(-50%) rotateY(180deg) rotateZ(-20deg);
+  transform: translateX(-50%) rotateY(180deg) rotateZ(-20deg);
+}
+.palm-trees:after {
+  -webkit-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("img/palm-tree.png");
+  background-size: 192px 321.5px;
+  height: 321.5px;
+  width: 192px;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  -webkit-transform: translateX(50%) rotateZ(-20deg);
+  -ms-transform: translateX(50%) rotateZ(-20deg);
+  transform: translateX(50%) rotateZ(-20deg);
 }
