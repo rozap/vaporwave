@@ -1,5 +1,5 @@
-height = 643px/2
-width = 384px/2
+height = 500px/2
+width = 500px/2
 
 dolphin()
   content: ''
@@ -9,7 +9,7 @@ dolphin()
   background-size: width height
   height: height
   width: width
-  transform-origin: bottom center
+  transform-origin: 50% 50%
 
 .dolphins
   position: relative
@@ -18,14 +18,14 @@ dolphin()
   dolphin()
 
   position: absolute
-  bottom: 0
+  top: 50%
   left: 0
-  transform: translateX(-20%) rotateY(180deg) rotateZ(-10deg)
+  transform: translateY(-50%) translateX(-20%) rotateY(180deg) rotateZ(-5deg)
 
 .dolphins:after
   dolphin()
 
   position: absolute
-  bottom: 0
+  top: 50%
   right: 0
-  transform: translateX(20%) rotateZ(-20deg)
+  transform: translateY(-20%) translateX(20%) rotateZ(-10deg)

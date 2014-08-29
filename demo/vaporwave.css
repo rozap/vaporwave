@@ -147,36 +147,36 @@ h6.section {
   display: block;
   background-repeat: no-repeat;
   background-image: url("img/dolphin.png");
-  background-size: 192px 321.5px;
-  height: 321.5px;
-  width: 192px;
-  -webkit-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
-  transform-origin: bottom center;
+  background-size: 250px 250px;
+  height: 250px;
+  width: 250px;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   position: absolute;
-  bottom: 0;
+  top: 50%;
   left: 0;
-  -webkit-transform: translateX(-20%) rotateY(180deg) rotateZ(-10deg);
-  -ms-transform: translateX(-20%) rotateY(180deg) rotateZ(-10deg);
-  transform: translateX(-20%) rotateY(180deg) rotateZ(-10deg);
+  -webkit-transform: translateY(-50%) translateX(-20%) rotateY(180deg) rotateZ(-5deg);
+  -ms-transform: translateY(-50%) translateX(-20%) rotateY(180deg) rotateZ(-5deg);
+  transform: translateY(-50%) translateX(-20%) rotateY(180deg) rotateZ(-5deg);
 }
 .dolphins:after {
   content: '';
   display: block;
   background-repeat: no-repeat;
   background-image: url("img/dolphin.png");
-  background-size: 192px 321.5px;
-  height: 321.5px;
-  width: 192px;
-  -webkit-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
-  transform-origin: bottom center;
+  background-size: 250px 250px;
+  height: 250px;
+  width: 250px;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   position: absolute;
-  bottom: 0;
+  top: 50%;
   right: 0;
-  -webkit-transform: translateX(20%) rotateZ(-20deg);
-  -ms-transform: translateX(20%) rotateZ(-20deg);
-  transform: translateX(20%) rotateZ(-20deg);
+  -webkit-transform: translateY(-20%) translateX(20%) rotateZ(-10deg);
+  -ms-transform: translateY(-20%) translateX(20%) rotateZ(-10deg);
+  transform: translateY(-20%) translateX(20%) rotateZ(-10deg);
 }
 .bevel {
   position: relative;
