@@ -1,8 +1,14 @@
-.windows {
+body {
   background-color: #008080;
-  padding-bottom: 32px;
 }
 
 .window {
   margin: 0 auto;
+}
+
+
+.container {
+	background: white;
+	margin-top:32px;
+	padding: 32px;
 }

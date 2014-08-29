@@ -12,33 +12,34 @@ h1, h2
 
 
 
-h3.section, h4.section, h5.section 
+.section  
   border-bottom: 4px solid green
   margin-top: 32px
   margin: 16px 8px
+  z-index:2
+  display:block
 
-  &::after 
-    content: ""
-    width: 100%
-    height: 4px
-    display: block
-    position: relative
-    top:7px
-    z-index: -1
-    left:2px
-    background: pink
+.section::after 
+  content: ""
+  width: 100%
+  height: 4px
+  display: block
+  position: relative
+  top:7px
+  z-index: 1
+  left:2px
+  background: pink
   
 
-  &::before 
-    content: " "
-    background-image: url(/img/ic-section-small.png)
-    background-repeat: none 
-    position: relative
-    display: block
-    float: right
-    top:-8px
-    height:30px
-    width:30px
-    z-index: 10
+.section::before 
+  content: " "
+  background-image: url(/img/ic-section-small.png)
+  background-repeat: none 
+  position: relative
+  display: block
+  float: right
+  top:-8px
+  height:30px
+  width:30px
   
 
