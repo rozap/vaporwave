@@ -1,6 +1,11 @@
 @import 'nib'
 @import './variables'
 @import './mixins'
-
+@require './font'
 @require './palm-trees'
 @require './water'
+
+.container
+  max-width: 768px;
+  margin-left: calc(50% - 768px/2)
+  margin-right: calc(50% - 768px/2)

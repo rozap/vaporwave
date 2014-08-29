@@ -1,5 +1,6 @@
-body {
+.windows {
   background-color: #008080;
+  padding-bottom: 32px;
 }
 
 .window {
