@@ -194,6 +194,8 @@ h6.section {
 }
 .container {
   max-width: 768px;
+  margin-left: -webkit-calc(50% - 768px / 2);
   margin-left: calc(50% - 768px / 2);
+  margin-right: -webkit-calc(50% - 768px / 2);
   margin-right: calc(50% - 768px / 2);
 }

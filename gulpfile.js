@@ -19,7 +19,9 @@ gulp.task('build', function(){
       paths: [__dirname+'/src'],
       use: [
         nib(),
-        autoprefixer()
+        autoprefixer({
+          browsers: 'last 4 versions'
+        })
       ]
     }))
 
