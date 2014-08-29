@@ -131,6 +131,11 @@ h6.section {
   background-image: url("img/water.jpg");
   background-repeat: repeat;
 }
+.white-marble {
+  background-size: 250px 250px;
+  background-image: url("img/white-marble.png");
+  background-repeat: repeat;
+}
 .divider {
   margin: 50px 0 5px 0;
 }
