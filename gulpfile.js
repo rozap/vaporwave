@@ -4,6 +4,7 @@ var csso = require('gulp-csso');
 var stylus = require('gulp-stylus');
 var rename = require('gulp-rename');
 var deploy = require('gulp-gh-pages');
+var lr = require('gulp-livereload');
 var nib = require('nib');
 var autoprefixer = require('autoprefixer-stylus');
 
@@ -12,7 +13,7 @@ gulp.task('deploy', function(){
     .pipe(deploy());
 });
 
-gulp.task('default', function(){
+gulp.task('build', function(){
   return gulp.src('src/index.styl')
     .pipe(stylus({
       paths: [__dirname+'/src'],
@@ -23,12 +24,20 @@ gulp.task('default', function(){
     }))
 
     // non-minified
-    .pipe(rename('win98.css'))
+    .pipe(rename('vaporwave.css'))
     .pipe(gulp.dest('dist'))
     .pipe(gulp.dest('demo'))
+    .pipe(lr())
 
     // minified
-    .pipe(rename('win98.min.css'))
+    .pipe(rename('vaporwave.min.css'))
     .pipe(csso())
     .pipe(gulp.dest('dist'));
 });
+
+
+gulp.task('watch', function(){
+  gulp.watch('src/**/*.styl', ['build']);
+});
+
+gulp.task('default', ['build', 'watch']);
