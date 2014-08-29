@@ -16,6 +16,39 @@ h2 {
   color: #ffffff;
   text-shadow: #fec4c4 -4px -4px 10px, #a2f5ff 4px 4px 6px, #a2f5ff 4px 4px 6px, #fec4c4 -4px -4px 6px;
 }
+h3.section,
+h4.section,
+h5.section {
+  border-bottom: 4px solid #6dff6c;
+  margin-top: 32px;
+}
+h3.section::after,
+h4.section::after,
+h5.section::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: relative;
+  top: 7px;
+  z-index: -1;
+  left: 2px;
+  background: #fe81df;
+}
+h3.section::before,
+h4.section::before,
+h5.section::before {
+  content: " ";
+  background-image: url(/img/ic-section-small.png);
+  background-repeat: none;
+  position: relative;
+  display: block;
+  float: right;
+  top: -8px;
+  height: 30px;
+  width: 30px;
+  z-index: 10;
+}
 .vapor-grid {
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
