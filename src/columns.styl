@@ -1,0 +1,21 @@
+height = 643px/2
+width = 384px/2
+
+column()
+  content: ''
+  display: block
+  background-repeat: no-repeat
+  background-image: url('img/column.png')
+  background-size: width height
+  height: height
+  width: width
+  transform-origin: 50% 50%
+
+.columns
+  position: relative
+
+.columns:before
+  column()
+
+.columns:after
+  column()
