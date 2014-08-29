@@ -102,9 +102,9 @@ h6.section {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotateY(180deg);
+  -ms-transform: translateY(-50%) translateX(-50%) rotateY(180deg);
+  transform: translateY(-50%) translateX(-50%) rotateY(180deg);
 }
 .columns:after {
   -moz-box-sizing: border-box;
