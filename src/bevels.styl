@@ -1,0 +1,19 @@
+@import 'nib'
+
+
+.bevel
+  position: relative
+  background: gray !important
+
+.bevel::after
+  box-shadow:
+    -5px -5px 2px rgba(0,0,0,0.4) inset,
+    5px 5px 2px rgba(255,255,255,0.4) inset
+  position:absolute
+  left: 0px
+  top: 0px
+  bottom: 0px
+  right: 0px
+  display:block
+  content:"\00a0"
+

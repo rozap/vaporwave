@@ -178,6 +178,20 @@ h6.section {
   -ms-transform: translateX(20%) rotateZ(-20deg);
   transform: translateX(20%) rotateZ(-20deg);
 }
+.bevel {
+  position: relative;
+  background: #bfbfbf !important;
+}
+.bevel::after {
+  box-shadow: -5px -5px 2px rgba(0,0,0,0.4) inset, 5px 5px 2px rgba(255,255,255,0.4) inset;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: block;
+  content: "\00a0";
+}
 .container {
   max-width: 768px;
   margin-left: calc(50% - 768px / 2);
