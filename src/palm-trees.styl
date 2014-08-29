@@ -1,34 +1,28 @@
 height = 643px/2
 width = 384px/2
 
+palm-tree()
+  content: ''
+  display: block
+  background-repeat: no-repeat
+  background-image: url('img/palm-tree.png')
+  background-size: width height
+  height: height
+  width: width
+  transform-origin: bottom center
+
 .palm-trees:before
-  backface-visibility: visible
+  palm-tree()
+
   position: absolute
   bottom: 0
   left: 0
-
-  content: ''
-  display: block
-  background-repeat: no-repeat
-  background-image: url('img/palm-tree.png')
-  background-size: width height
-  height: height
-  width: width
-  transform-origin: bottom center
   transform: translateX(-50%) rotateY(180deg) rotateZ(-20deg)
 
 .palm-trees:after
-  backface-visibility: visible
+  palm-tree()
+
   position: absolute
   bottom: 0
   right: 0
-
-  content: ''
-  display: block
-  background-repeat: no-repeat
-  background-image: url('img/palm-tree.png')
-  background-size: width height
-  height: height
-  width: width
-  transform-origin: bottom center
   transform: translateX(50%) rotateZ(-20deg)

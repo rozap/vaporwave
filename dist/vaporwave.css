@@ -36,12 +36,6 @@ h2 {
   width: 30px;
 }
 .palm-trees:before {
-  -webkit-backface-visibility: visible;
-  -ms-backface-visibility: visible;
-  backface-visibility: visible;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   content: '';
   display: block;
   background-repeat: no-repeat;
@@ -52,17 +46,14 @@ h2 {
   -webkit-transform-origin: bottom center;
   -ms-transform-origin: bottom center;
   transform-origin: bottom center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   -webkit-transform: translateX(-50%) rotateY(180deg) rotateZ(-20deg);
   -ms-transform: translateX(-50%) rotateY(180deg) rotateZ(-20deg);
   transform: translateX(-50%) rotateY(180deg) rotateZ(-20deg);
 }
 .palm-trees:after {
-  -webkit-backface-visibility: visible;
-  -ms-backface-visibility: visible;
-  backface-visibility: visible;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   content: '';
   display: block;
   background-repeat: no-repeat;
@@ -73,9 +64,17 @@ h2 {
   -webkit-transform-origin: bottom center;
   -ms-transform-origin: bottom center;
   transform-origin: bottom center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   -webkit-transform: translateX(50%) rotateZ(-20deg);
   -ms-transform: translateX(50%) rotateZ(-20deg);
   transform: translateX(50%) rotateZ(-20deg);
+}
+.water {
+  background-size: 250px 250px;
+  background-image: url("img/water.jpg");
+  background-repeat: repeat;
 }
 .container {
   max-width: 768px;
