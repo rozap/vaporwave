@@ -1,0 +1,125 @@
+.vaporwave {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-size: 11px;
+  font-family: Tahoma, Verdana;
+  color: #070707;
+}
+.vaporwave h1,
+.vaporwave h2 {
+  text-transform: uppercase;
+  font-0: weight;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: ;
+  text-shadow: -4px -4px 10px,  4px 4px 6px,  4px 4px 6px,  -4px -4px 6px;
+}
+.vaporwave h3.section,
+.vaporwave h4.section,
+.vaporwave h5.section {
+  border-bottom: 4px solid #6dff6c;
+  margin-top: 32px;
+  margin: 16px 8px;
+}
+.vaporwave h3.section::after,
+.vaporwave h4.section::after,
+.vaporwave h5.section::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: relative;
+  top: 7px;
+  z-index: -1;
+  left: 2px;
+  background: #fe81df;
+}
+.vaporwave h3.section::before,
+.vaporwave h4.section::before,
+.vaporwave h5.section::before {
+  content: " ";
+  background-image: url("/img/ic-section-small.png");
+  background-repeat: none;
+  position: relative;
+  display: block;
+  float: right;
+  top: -8px;
+  height: 30px;
+  width: 30px;
+  z-index: 10;
+}
+.vaporwave .window {
+  width: 400px;
+  background: #bfbfbf;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+}
+.vaporwave .window .content {
+  padding: 7px 10px;
+}
+.vaporwave .window .header {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #000080, #1084d0);
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 16px;
+}
+.vaporwave .window .header .icon {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 2px;
+}
+.vaporwave .window .header .buttons {
+  height: 14px;
+  float: right;
+}
+.vaporwave .window .header .buttons button {
+  vertical-align: text-top;
+  font-weight: bold;
+  line-height: 12px;
+  padding: 0;
+  height: 14px;
+  width: 14px;
+}
+.vaporwave button {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-size: 11px;
+  font-family: Tahoma, Verdana;
+  color: #070707;
+  text-align: center;
+  outline: none;
+  padding: 4px;
+  background: #bfbfbf;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+}
+.vaporwave button:enabled {
+  color: #070707;
+}
+.vaporwave button:disabled {
+  color: #818181;
+  text-shadow: 1px 1px #fff;
+}
+.vaporwave button:active:enabled {
+  box-shadow: 0 0 0 0 #000 inset;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+.vaporwave .resizable {
+  overflow: auto;
+  resize: both;
+}

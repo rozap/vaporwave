@@ -1,0 +1,23 @@
+body {
+  background-color: #008080;
+}
+
+.window {
+  margin: 0 auto;
+}
+
+.example {
+	min-height: 420px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.container {
+	background: white;
+	padding: 32px;
+}
+
+.bg-info>.container {
+	min-height: 800px;
+	background: rgba(255, 255, 255, .6);
+}
