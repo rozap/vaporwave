@@ -7,13 +7,12 @@ body {
 }
 
 .example {
-	display: block;
+	min-height: 420px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
 
 .container {
-	display: block;
 	background: white;
 	padding: 32px;
 }
