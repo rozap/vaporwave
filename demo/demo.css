@@ -7,11 +7,18 @@ body {
 }
 
 .example {
-	min-height: 420px;
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 .container {
+	display: block;
 	background: white;
-	margin-top:32px;
 	padding: 32px;
+}
+
+.bg-info>.container {
+	min-height: 800px;
+	background: rgba(255, 255, 255, .6);
 }

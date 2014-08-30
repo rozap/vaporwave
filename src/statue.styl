@@ -1,0 +1,31 @@
+height = 500px/2
+width = 245px/2
+
+statue()
+  content: ''
+  display: block
+  background-repeat: no-repeat
+  background-image: url('img/statue-med.png')
+  background-size: width height
+  height: height
+  width: width
+  //transform-origin: 50% 50%
+
+.statues
+  position: relative
+
+.statues:before
+  statue()
+
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translateY(-20%) rotateY(0deg)
+
+.statues:after
+  statue()
+
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translateY(-20%) rotateY(180deg)

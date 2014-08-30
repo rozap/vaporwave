@@ -178,6 +178,39 @@ h6.section {
   -ms-transform: translateY(-20%) translateX(20%) rotateZ(-10deg);
   transform: translateY(-20%) translateX(20%) rotateZ(-10deg);
 }
+.statues {
+  position: relative;
+}
+.statues:before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("img/statue-med.png");
+  background-size: 122.5px 250px;
+  height: 250px;
+  width: 122.5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-20%) rotateY(0deg);
+  -ms-transform: translateY(-20%) rotateY(0deg);
+  transform: translateY(-20%) rotateY(0deg);
+}
+.statues:after {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("img/statue-med.png");
+  background-size: 122.5px 250px;
+  height: 250px;
+  width: 122.5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-20%) rotateY(180deg);
+  -ms-transform: translateY(-20%) rotateY(180deg);
+  transform: translateY(-20%) rotateY(180deg);
+}
 .bevel {
   position: relative;
   background: #bfbfbf !important;
@@ -191,6 +224,32 @@ h6.section {
   right: 0px;
   display: block;
   content: "\00a0";
+}
+.neon-squares {
+  background: #25bfbf;
+  background-size: 768px 768px;
+  background-image: url("img/bg-squares.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+.neon-human {
+  background-color: #000;
+  background-size: 500px 500px;
+  background-image: url("img/bg-human.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+ul li {
+  min-height: 16px;
+  padding-top: 8px;
+  padding-left: 24px;
+  background-image: url("img/disc-sm.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
 }
 .container {
   max-width: 768px;
